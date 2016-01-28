@@ -8,22 +8,24 @@ set completeopt=menu,preview,longest
 
 let g:SuperTabDefaultCompletionType="context"
 
+"au BufRead,BufNewFile *.ejs set filetype=jst
+
 "自动读取
 set autoread
 
 "未保存的让vim自己保存
 set hidden
 
-set foldenable
-set foldmethod=syntax
-set foldcolumn=0
-setlocal foldlevel=1
+"set foldenable
+"set foldmethod=syntax
+"set foldcolumn=0
+"setlocal foldlevel=1
+
 setlocal noswapfile 
 set shiftwidth=4
 set softtabstop=4
 
 set showcmd
-set cmdheight=2
 
 set autochdir
 set incsearch
@@ -66,3 +68,6 @@ set ruler
 autocmd VimEnter * NERDTree
 map <F2> :NERDTreeToggle<CR>
 
+
+" Config clipborad
+set clipboard=unnamed
